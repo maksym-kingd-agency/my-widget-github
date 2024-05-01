@@ -2,7 +2,7 @@
   "name": "react-webpack",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index-3.js",
   "scripts": {
     "serve": "webpack serve --mode development",
     "build": "webpack --mode development"
@@ -11,9 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/material": "^5.15.15",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

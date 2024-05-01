@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Select, MenuItem } from "@mui/material";
 
 export function App() {
-  const [cities, setCities] = useState([]);
-  const [city, setCity] = useState({});
+  const [cities, setCities] = useState(null);
 
   useEffect(() => {
     fetch(
@@ -24,27 +22,17 @@ export function App() {
       .catch((error) => console.log(error));
   }, []);
 
-  const handleChange = (event) => {
-    setCity(event.target.value);
-  };
-
   console.log("cities", cities);
 
   return (
     <div style={{ zIndex: "1", position: "absolute", width: "100vw" }}>
-      <Select
-        labelId="demo-simple-select-label"
-        id="demo-simple-select"
-        size="small"
-        value={city}
-        label="Lity"
-        sx={{ minWidth: 200, background: "white" }}
-        onChange={handleChange}
-      >
-        {cities.map((city) => (
-          <MenuItem value={city.title}>{city.title}</MenuItem>
-        ))}
-      </Select>
+      <h1>React App</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos
+        delectus voluptatem ab repellat saepe eos molestiae cupiditate, omnis
+        doloremque, necessitatibus totam consectetur porro sint quam libero
+        aperiam? Laborum, quaerat?
+      </p>
     </div>
   );
 }

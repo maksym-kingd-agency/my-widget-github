@@ -32,19 +32,22 @@ export function App() {
 
   return (
     <div style={{ zIndex: "1", position: "absolute", width: "100vw" }}>
-      <Select
-        labelId="demo-simple-select-label"
-        id="demo-simple-select"
-        size="small"
-        value={city}
-        label="Lity"
-        sx={{ minWidth: 200, background: "white" }}
-        onChange={handleChange}
-      >
-        {cities.map((city) => (
-          <MenuItem value={city.title}>{city.title}</MenuItem>
-        ))}
-      </Select>
+      <div style={{ width: "100%" }}>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          size="small"
+          value={city}
+          label="Lity"
+          sx={{ minWidth: 200 }}
+          onChange={handleChange}
+        >
+          {cities.map((city) => (
+            <MenuItem value={city.title}>{city.title}</MenuItem>
+          ))}
+        </Select>
+      </div>
+      <h1>React App</h1>
     </div>
   );
 }

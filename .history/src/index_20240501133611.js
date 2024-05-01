@@ -4,6 +4,8 @@ import ReactDOM from "react-dom";
 import { App } from "./App";
 import "./App.scss";
 
+console.log("Hello-3", element);
+
 setTimeout(() => {
   const element = document.getElementById("my-section-root");
   ReactDOM.render(<App />, element);

@@ -38,8 +38,9 @@ export function App() {
         size="small"
         value={city}
         label="Lity"
-        sx={{ minWidth: 200, background: "white" }}
+        sx={{ minWidth: 200 }}
         onChange={handleChange}
+        variant=""
       >
         {cities.map((city) => (
           <MenuItem value={city.title}>{city.title}</MenuItem>

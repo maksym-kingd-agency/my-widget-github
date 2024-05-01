@@ -3,7 +3,6 @@ import { Select, MenuItem } from "@mui/material";
 
 export function App() {
   const [cities, setCities] = useState([]);
-  const [city, setCity] = useState({});
 
   useEffect(() => {
     fetch(
@@ -24,10 +23,6 @@ export function App() {
       .catch((error) => console.log(error));
   }, []);
 
-  const handleChange = (event) => {
-    setCity(event.target.value);
-  };
-
   console.log("cities", cities);
 
   return (
@@ -35,16 +30,15 @@ export function App() {
       <Select
         labelId="demo-simple-select-label"
         id="demo-simple-select"
-        size="small"
-        value={city}
+        //   value={age}
         label="Lity"
-        sx={{ minWidth: 200, background: "white" }}
-        onChange={handleChange}
+        // onChange={handleChange}
       >
         {cities.map((city) => (
-          <MenuItem value={city.title}>{city.title}</MenuItem>
+          <MenuItem value={10}>Ten</MenuItem>
         ))}
       </Select>
+      <h1>React App</h1>
     </div>
   );
 }

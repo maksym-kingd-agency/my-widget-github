@@ -38,7 +38,7 @@ export function App() {
         size="small"
         value={city}
         label="Lity"
-        sx={{ minWidth: 200, background: "white" }}
+        sx={{ minWidth: 200, background: "red" }}
         onChange={handleChange}
       >
         {cities.map((city) => (

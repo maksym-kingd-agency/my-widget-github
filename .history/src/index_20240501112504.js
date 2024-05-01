@@ -4,10 +4,11 @@ import ReactDOM from "react-dom";
 import { App } from "./App";
 import "./App.scss";
 
-setTimeout(() => {
-  const element = document.getElementById("my-section-root");
-  ReactDOM.render(<App />, element);
-}, 4000);
+const headerElement = document.getElementById("SITE_HEADER");
+
+console.log("Hello", headerElement);
+
+ReactDOM.render(<App />, headerElement);
 
 // const appElement = document.getElementById("my-root");
 

@@ -1,0 +1,11 @@
+{
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/listings/[slug]": "pages/listings/[slug].js",
+  "/embed/search-section": "pages/embed/search-section.js",
+  "/[[...generalPage]]": "pages/[[...generalPage]].js",
+  "/_app": "pages/_app.js",
+  "/r/[slug]": "pages/r/[slug].js",
+  "/r/thank-you/[reference]": "pages/r/thank-you/[reference].js",
+  "/s": "pages/s.js"
+}

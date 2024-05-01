@@ -1,0 +1,1 @@
+{"version":3,"file":"703.js","mappings":";;;;;;;;;;;;;;;;AAAmC","sources":["webpack:///./src/components/layouts/Footer/index.ts"],"sourcesContent":["export { default } from './Footer';\n"],"names":["default"],"sourceRoot":""}
